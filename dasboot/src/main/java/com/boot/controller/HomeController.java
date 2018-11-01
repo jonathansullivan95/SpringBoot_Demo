@@ -5,8 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController {
-    @RequestMapping
+
+    @RequestMapping("/")
     public String home() {
-        return "Das Boot, reporting for duty";
+        return "Jonathan's Spring App is running";
     }
 }
