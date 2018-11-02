@@ -20,7 +20,7 @@ angular.module('app.controllers', []).controller('ShipwreckListController', func
     });
   };
 }).controller('ShipwreckEditController', function($scope, $state, $stateParams, Shipwreck) {
-  $scope.updateShipwreck = function() { //Update the edited shipwreck. Issues a PUT to /api/v1/shipwrecks/:id
+  $scope.updateShipwreck = function() { //Update the edited shipwreck. Issues a PUT to /api/v1/shipwrecks/:id (via angular resource update function)
     $scope.shipwreck.$update(function() {
       $state.go('shipwrecks'); // on success go back to the list i.e. shipwrecks state.
     });
