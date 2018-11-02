@@ -9,5 +9,5 @@ public class HomeController {
     @RequestMapping("/")
     public String home() {
         return "Jonathan's Spring App is running";
-    }
+    }   //app home page from localhost:(port)/
 }
